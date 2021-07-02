@@ -1,14 +1,17 @@
 import React from "react";
+import CommentLikes from "./CommentLikes"
 
 function CommentItem ({ user, comment}) {
-    return (<div>
+    return (
+    <div>
         <h2>
-        {user}
+            {user}
         </h2>
         <p>
-           {comment} 
+            {comment} <CommentLikes />
         </p>
     </div>
-    )}
+    )
+}
 
 export default CommentItem;
